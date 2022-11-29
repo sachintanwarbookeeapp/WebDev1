@@ -7,11 +7,12 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 2em;
+  padding: 0 2em;
 }
 
 #nav-bar {
   display: flex;
+  margin-top: 24px;
 }
 
 #nav-bar li {
