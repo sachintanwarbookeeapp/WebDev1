@@ -4,15 +4,21 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 header {
   display: flex;
+  margin: 0;
   justify-content: space-between;
-  padding: 0 2em;
+  align-items: center;
+  padding: 0.5em 2em;
+  background-color: #1cd0e0;
 }
 
 #nav-bar {
   display: flex;
-  margin-top: 24px;
 }
 
 #nav-bar li {
@@ -33,6 +39,7 @@ header {
 }
 
 .heading {
+  margin-top: 2em;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -49,8 +56,7 @@ header {
 }
 
 .cell {
-  width: 400px;
-  height: 320px;
+  max-width: 400px;
 }
 
 .item {
@@ -71,17 +77,21 @@ header {
 
 .product-img {
   width: 100%;
+  height: 90%;
+  object-fit: cover;
   border-radius: 3px;
 }
 
-/* Purchase form */
-.purchase-form {
+/********** Purchase form and Sign In/Sign Up forms**********/
+.purchase-form,
+.signIn-form,
+.signUp-form {
   border: 1px solid black;
   border-radius: 3px;
   box-shadow: 5px 5px 15px grey;
   padding: 1.5em;
-  width: 350px;
-  margin: 4em auto;
+  max-width: 350px;
+  margin: 1em auto 1.5em auto;
 }
 
 label {
@@ -98,6 +108,17 @@ label {
   margin-bottom: 2em;
 }
 
+.radio-inputs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
+}
+
+.radio-inputs label {
+  display: inline;
+  font-weight: normal;
+}
+
 .req {
   color: red;
 }
@@ -111,10 +132,42 @@ label {
 .form-btn {
   font-weight: bold;
   padding: 0.5em 1.25em;
+  font-size: 1.1em;
   border: 0.5px solid black;
   border-radius: 5px;
+  color: white;
 }
 
 .form-btn:hover {
   cursor: pointer;
+}
+
+.signUp-par {
+  margin: 0;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+/* Electronics page */
+
+.products-table {
+  width: 1150px;
+  margin: 4em auto;
+}
+
+.product-container {
+  width: 200px;
+  height: 275px;
+  border: 0.5px solid black;
+  border-radius: 3px;
+  box-shadow: 5px 5px 15px grey;
+  padding: 1.5em;
+  border: 1px solid black;
+  margin-bottom: 2em;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
 }
