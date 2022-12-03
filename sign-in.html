@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login Page</title>
+    <title>Sign In</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -12,25 +12,19 @@
             <li><a href="about-us.html" class="nav-item">About us</a></li>
             <li><a href="why-us.html" class="nav-item">Why us?</a></li>
             <li><a href="sign-in.html" class="nav-item">Sign in</a></li>
+            <li><a href="purchase.html" class="nav-item">purchase</a></li>
         </ul>
     </header>
-    <h1 style="color: cadetblue; text-align: center;">Log In</h1>
-    <div class="loginInputs">
-        <section style="text-align: center">
-            <label>Email:
-                <input type="email" name="email" id="email"  placeholder="Enter the email"><br>
-            </label><br>
-            <label>Password:
-                <input type="password" name="password" id="password" placeholder="Enter the password"><br>
-                <br>
-                <button type="button" style="color: orange;height: 20px;width: 100px" name="continue" id="continue" >Continue</button>
-            </label>
-        </section>
-    </div>
-    <div style="text-align: center;">
-        <h2 style="font-size: medium">"Are you new here?"
-        <a href="http://localhost:63342/WebDev1/signupPage.html?" style="font-size: medium">Create an Account</a>
-        </h2>
-    </div>
+    <h2 class="heading">Sign in</h2>
+    <form class="signIn-form">
+        <label for="email">Email<span class="req"> *</span></label>
+        <input class="input" type="email" id="email" name="email" required>
+        <label for="password">Password<span class="req"> *</span></label>
+        <input class="input" type="password" id="password" name="password" required>
+        <div class="form-btns">
+            <input style="background-color: #12CB34;" class="form-btn" type="submit" value="Sign In">
+        </div>
+    </form>
+    <p class="signUp-par">Don't have an account? <a href="sign-up.html">Sign Up</a></p>
 </body>
 </html>
