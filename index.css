@@ -360,3 +360,67 @@ ul {
   color: #24252b;
   background-color: #ffffff;
 }
+
+/* Site Map Page */
+
+.scontainer {
+  max-width: 60%;
+  margin: auto;
+}
+
+site-map * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.srow {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1em;
+}
+
+.scolumn {
+  width: 30%;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sitemap li {
+  list-style: none;
+}
+
+.scolumn h4 {
+  font-size: 16px;
+  color: #000000;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.scolumn h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #1cd0e0;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.scolumn li a {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.scolumn ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
