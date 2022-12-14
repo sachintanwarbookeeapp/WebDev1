@@ -17,6 +17,10 @@ header {
   background-color: #1cd0e0;
 }
 
+main {
+  margin: 3em auto;
+}
+
 .store-logo {
   max-width: 180px;
   min-width: 100px;
@@ -249,7 +253,6 @@ label {
 
 .product-price {
   font-weight: bold;
-  margin-top: 0;
 }
 
 .purchase-btn {
