@@ -22,7 +22,7 @@ main {
 }
 
 .store-logo {
-  max-width: 180px;
+  max-width: 22vh;
   min-width: 100px;
 }
 
@@ -39,9 +39,10 @@ main {
 .nav-item,
 #store-name {
   text-decoration: none;
-  text-transform: uppercase;
+  
   letter-spacing: 2px;
   color: black;
+  font-size: 1.1em;
 }
 
 .nav-item:hover {
@@ -271,23 +272,34 @@ label {
   display: flex;
   justify-content: center;
   width: 90%;
-  margin: 3em auto;
+  margin: 1.5em auto;
 }
 
 .about-us-section {
   width: 90%;
   margin: 0 auto;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  line-height: 1.5em;
 }
 
 .stores-info-container {
-  max-width: 50%;
+  max-width: 80%;
   margin: 2em auto;
   text-align: center;
   border: 0.5px solid black;
   border-radius: 0.3em;
-  box-shadow: 5px 5px 5px grey;
+  box-shadow: 1px 1px 1px grey;
   padding: 1.5em;
+}
+
+.store-info a {
+  margin-left: 10px;
+}
+
+iframe {
+  border: 0;
+  max-width: 100%;
+  margin: 1em auto;
 }
 
 .stores-info-container h4 {

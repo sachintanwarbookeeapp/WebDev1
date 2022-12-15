@@ -8,27 +8,27 @@
 </head>
 <body>
     <header>
-        <h2><a href="index.html" id="store-name">Store name</a></h2>
+        <a href="index.html"><img class="store-logo" src="images/lg_logo.png" alt="Store logo"></a>
         <ul id="nav-bar">
             <li><a href="about-us.html" class="nav-item">About us</a></li>
             <li><a href="sign-in.html" class="nav-item">Sign in</a></li>
-            <li><a href="purchase.html" class="nav-item">purchase</a></li>
+            <li><a style="color: aliceblue;" href="purchase.html" class="nav-item">Purchase</a></li>
         </ul>
     </header>
     <main>
         <h2 class="heading">purchase item</h2>
         <form class="purchase-form">
             <label for="item-name">Item Name<span class="req"> *</span></label>
-            <input class="input" type="text" id="item-name" name="item-name" required>
+            <input class="input" type="text" id="item-name" name="item-name" placeholder="iPhone 13 Pro" required>
             <label for="item-no">Item Serial Number<span class="req"> *</span></label>
-            <input class="input" type="text" id="item-no" name="item-no" required>
+            <input class="input" type="text" id="item-no" name="item-no" placeholder="KW2439JSHNE56939" required>
             <label for="item-price">Price<span class="req"> *</span></label>
-            <input class="input" type="text" id="item-price" name="item-price" required>
+            <input class="input" type="text" id="item-price" placeholder="$1400" name="item-price" required>
             <label style="display: inline; padding-right:10em;"for="item-quantity">Quantity<span class="req"> *</span></label>
-            <input class="input" type="text" id="item-quantity" name="item-quantity" required>
-            <label style="display: inline; padding-right:8em" for="item-category">Category<span class="req"> *</span></label>
-            <select name="item-category" id="item-category" required>
-                <option value=""></option>
+            <input class="input" type="text" id="item-quantity" placeholder="1" name="item-quantity" required>
+            <label style="display: inline;" for="item-category">Category<span class="req"> *</span></label>
+            <select name="item-category" style="float: right;" id="item-category" required>
+                <option value="">Choose Category</option>
                 <option value="electronics">Electronics</option>
                 <option value="groceries">Groceries</option>
                 <option value="personal-care">Personal Care</option>
@@ -40,7 +40,7 @@
                 <input style="background-color: #E01C1C;"class="form-btn" type="reset" value="Clear All">
             </div>
         </form>
-    </main>
+    </main><br><br>
     <footer class="footer">
         <div class="fcontainer">
           <div class="frow">
